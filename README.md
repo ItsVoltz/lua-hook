@@ -4,7 +4,7 @@ Class for easily hooking functions in lua
 Example:
 
 ```lua
-local hook = require('hook')
+local Hook = require('hook')
 
 -- Print hook
 _G.print = Hook:New(_G.print, function(fn, ...)
