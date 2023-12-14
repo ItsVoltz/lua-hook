@@ -7,7 +7,7 @@ function Hook:__call(...)
 end
 
 function Hook:New(original, hook)
-  local self = setmetatable({}, Hook)
+  local self = setmetatable({}, self)
   
   self.fn = original
   self.hook = hook
