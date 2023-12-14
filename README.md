@@ -13,4 +13,11 @@ _G.print = Hook:New(_G.print, function(fn, ...)
 end)
 
 print('Hello, World!')
+
+--[[
+Output:
+pre print
+Hello, World!
+post print
+]--
 ```
