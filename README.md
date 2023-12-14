@@ -1,9 +1,11 @@
-# lua-hook
+#lua-hook
 Class for easily hooking functions in lua
 
 Example:
 
 ```lua
+local hook = require('hook')
+
 -- Print hook
 _G.print = Hook:New(_G.print, function(fn, ...)
   fn('pre print') -- before original is called
